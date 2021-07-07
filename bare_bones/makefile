@@ -26,5 +26,4 @@ bin: ./build/boot.o ./build/kernel.o linker.ld
 	$(CC) -c kernel.c -o ./build/kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 
 clean:
-	rm -f ./*.o ./*.bin ./*.iso
 	rm -rf ./build
